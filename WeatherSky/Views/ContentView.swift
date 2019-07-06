@@ -9,14 +9,18 @@
 import SwiftUI
 
 struct ContentView : View {
-    @State var weatherUsecase = WeatherUsecase(byCity: "phitsanulok")
     
     var body: some View {
-        ZStack {
-            BackgroundView()
-            VStack {
-                CurrentWeatherView(viewModel: weatherUsecase.currentWeather)
-            }
+        VStack {
+            Text("Hello World")
+                .padding()
+                .foregroundColor(.white)
+                .background(
+                    LinearGradient(gradient:
+                        Gradient(colors: [.white, .black]),
+                                   startPoint: .top,
+                                   endPoint: .bottom),
+                    cornerRadius: 0)
         }
     } 
 }

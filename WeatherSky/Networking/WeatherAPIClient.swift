@@ -11,7 +11,7 @@ import Foundation
 import Foundation
 
 class WeatherAPI {
-    fileprivate let openWeatherAPIKey = "6e3528041b8adf7517d0681ebae6d576"
+    fileprivate let openWeatherAPIKey = "Enter your api key na ja"
     
     lazy var baseUrl: URL = {
         return URL(string: "http://api.openweathermap.org/data/2.5/weather")!
