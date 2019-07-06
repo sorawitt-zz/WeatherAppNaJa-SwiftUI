@@ -10,7 +10,6 @@ import Foundation
 
 enum WeatherAPIError: Error {
     case requestFailed
-    case responseUnsuccessful(statusCode: Int)
     case invalidData
     case jsonParsingFailure
     case invalidURL

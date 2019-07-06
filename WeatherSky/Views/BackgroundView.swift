@@ -6,4 +6,13 @@
 //  Copyright © 2562 sorawit trutsat. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
+
+struct BackgroundView: View {
+    var body: some View {
+        let background = Rectangle()
+            .fill(Color.init(red: 38/255, green: 38/255, blue: 38/255))
+            .edgesIgnoringSafeArea(.all)
+        return background
+    }
+}

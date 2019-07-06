@@ -14,5 +14,10 @@ extension Date {
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
-    
+}
+
+extension TimeInterval {
+    func toDate() -> Date {
+        Date(timeIntervalSince1970: self)
+    }
 }
